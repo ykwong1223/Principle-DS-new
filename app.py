@@ -44,7 +44,7 @@ def cosine_similar(nm):
       subset=subset["title"].reset_index(drop=True)
     else:
       subset=" Please enter a right name!!!"
-    return st.write(subset[1:])
+    return st.write(st.dataframe(subset[1:], width=800))
 
 
 st.button('Recommend', on_click=cosine_similar(ttl))
