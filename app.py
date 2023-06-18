@@ -46,4 +46,4 @@ def cosine_similar(nm):
     return st.tex(subset[1:])
 
 
-st.button('Recommend', on_click=recommend(ttl, mthd))
+st.button('Recommend', on_click=cosine_similar(ttl))
