@@ -3,7 +3,7 @@ st.title('Netflix Recommendation System')
 
 
 ttl = st.text_input('Input movie name')
-import scikit-learn as sklearn
+import scikit-learn
 from sklearn.metrics.pairwise import cosine_similarity
 import requests
 import csv
