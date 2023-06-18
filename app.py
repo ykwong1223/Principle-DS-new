@@ -2,7 +2,7 @@ import streamlit as st
 st.title('Netflix Recommendation System')
 
 
-ttl = st.text_input('Input movie name')
+
 from sklearn.metrics.pairwise import cosine_similarity
 import requests
 import csv
@@ -46,6 +46,6 @@ def cosine_similar(nm):
     else:
       return st.write("Please enter a right name!!!")
       
-
+ttl = st.text_input('Input movie name')
 
 st.button('Recommend', on_click=cosine_similar(ttl))
