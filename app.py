@@ -41,7 +41,7 @@ def cosine_similar(nm):
       raw["score"]=[m[1] for m in score]
       subset=raw[["title","score"]]
       subset=subset.sort_values(by='score',ascending=False)
-      subset=subset["title"].reset_index()
+      subset=subset["title"].reset_index(drop=True)
     else:
       subset=" Please enter a right name!!!"
     return st.write(subset[1:])
