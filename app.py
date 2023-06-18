@@ -43,7 +43,7 @@ def cosine_similar(nm):
       subset=subset.sort_values(by='score',ascending=False)
     else:
       subset=" Please enter a right name!!!"
-    return st.tex(subset[1:])
+    return st.text(subset[1:])
 
 
 st.button('Recommend', on_click=cosine_similar(ttl))
