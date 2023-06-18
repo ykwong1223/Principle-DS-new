@@ -42,9 +42,10 @@ def cosine_similar(nm):
       subset=raw[["title","score"]]
       subset=subset.sort_values(by='score',ascending=False)
       subset=subset["title"].reset_index(drop=True)
+      return st.write(st.dataframe(subset[1:], width=800))
     else:
-      subset=" Please enter a right name!!!"
-    return st.write(st.dataframe(subset[1:], width=800))
+      return"Please enter a right name!!!"
+      
 
 
 st.button('Recommend', on_click=cosine_similar(ttl))
