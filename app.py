@@ -1,4 +1,4 @@
-!pip install sklearn
+!pip install scikit-learn
 import streamlit as st
 st.title('Netflix Recommendation System')
 
