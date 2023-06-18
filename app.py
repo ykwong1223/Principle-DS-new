@@ -5,7 +5,7 @@ st.title('Netflix Recommendation System')
 
 ttl = st.text_input('Input movie name')
 
-from sklearn.metrics.pairwise import linear_kernel, cosine_similarity, pairwise_distances, manhattan_distances,euclidean_distances
+from sklearn.metrics.pairwise import cosine_similarity
 import requests
 import csv
 import pandas as pd
